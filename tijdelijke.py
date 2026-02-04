@@ -1,0 +1,16 @@
+mijn_dictionary = {
+    "aardbij": 3,
+    "vanille": 4,
+    "chocolade": 5,
+}
+aanbieding = mijn_dictionary["aardbij"] * 0.8
+reclame_tekst = f"vandaag in de aanbieding: vanille-ijs, 1 liter - slechts €  {aanbieding}"
+eerste_o = reclame_tekst.find("0")
+reclame_tekst2 = reclame_tekst[:eerste_o]
+reclame_tekst3 = reclame_tekst2.upper()
+reclame_tekst4 = reclame_tekst3.split()
+for el in reclame_tekst4:
+    if len(el) >= 5:
+        print(el.upper())
+    else:
+        print(el.lower())
